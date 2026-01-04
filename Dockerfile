@@ -6,8 +6,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
-     ca-certificates wget curl git python3 python3-pip neofetch tini \
-  && rm -rf /var/lib/apt/lists/*
+     ca-certificates wget curl git python3 python3-pip neofetch tini
 
 # Install latest ttyd (auto-updating)
 RUN wget -qO /usr/local/bin/ttyd \
