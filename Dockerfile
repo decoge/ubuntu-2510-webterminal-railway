@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM ubuntu:25.10
 
 # Fallback for local Docker; Railway will override this
 ENV PORT=7681
