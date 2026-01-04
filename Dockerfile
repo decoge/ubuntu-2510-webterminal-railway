@@ -28,4 +28,4 @@ ENV PASSWORD=change-me
 ENTRYPOINT ["/usr/bin/tini","--"]
 
 # Explicit bind + Railway PORT
-CMD ["/bin/bash","-lc","/usr/local/bin/ttyd -i 0.0.0.0 -p ${PORT} -c ${USERNAME}:${PASSWORD} /bin/bash"]
+CMD ["/bin/bash","-lc","/usr/local/bin/ttyd --writable -i 0.0.0.0 -p ${PORT} -c ${USERNAME}:${PASSWORD} /bin/bash"]
